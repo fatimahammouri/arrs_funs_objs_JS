@@ -23,4 +23,11 @@ console.log(everyOtherItem(['apple', 'berry', 'banana', 'melon', 'cherry']))
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-}
+  let result = []
+  let sortedItems = items.sort((a,b) => a - b);
+    console.log(sortedItems)
+  result = sortedItems.slice(0, n)
+    console.log(result)
+  }
+smallestNItems([1,4,6,9,0,7], 5)
+
