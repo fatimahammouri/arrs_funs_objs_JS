@@ -3,8 +3,21 @@
 
 // 1. countWords
 function countWords(phrase) {
-  // Replace this with your code
+  let wordsArray = phrase.split(' ');
+    console.log(wordsArray);
+  let wordCount = {};
+  for(let i = 0; i < wordsArray.length; i ++){
+    let word = wordsArray[i]
+      if (wordCount[word] === undefined){
+        wordCount[word] = 1;
+      } else {
+        wordCount[word] += 1;
+      }
+  }
+  return wordCount;
 }
+
+console.log(countWords('I like to code and I ike code'))
 
 
 // 2. getMelonsAtPrice
